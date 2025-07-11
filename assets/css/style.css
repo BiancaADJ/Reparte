@@ -1,3 +1,34 @@
+/* ROOT */
 :root{
   --cor_padrao: #F17D19;
+}
+/* Variáveis */
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center{
+  text-align: center;
+  align-items: center;
+}
+
+/* LOGIN */
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--fonte1); /* Fonte usada */
+}
+
+body.login{
+  background-color: wheat;
+}
+
+main.login{
+  margin: 5%;
+  background-color: white;
+  section{flex: 1;}
 }
