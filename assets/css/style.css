@@ -1,6 +1,13 @@
 /* ROOT */
 :root{
   --cor_padrao: #F17D19;
+  --fundo_E1: #131314;
+  --fundo_E2: #1b1b1b;
+  --fundo_E3: #282a2c;
+  --fundo_E4: #323537;
+  --fundo_E5: #3f4244;
+  --fundo_E6: #4f5254;
+  --texto: #e3e3e3;
 }
 /* Variáveis */
 .flex-center{
@@ -31,4 +38,31 @@ main.login{
   margin: 5%;
   background-color: white;
   section{flex: 1;}
+}
+
+/* MAIN */
+body.main{
+  background-color: var(--fundo_E2);
+  color: var(--texto);
+}
+
+footer.main{
+  font-family: 'Inter', Arial, sans-serif;
+  text-align: center;
+  font-size: 2vh;
+  p{
+    line-height: 3vh;
+  }
+}
+
+footer.main section:last-child{
+  border-top: 1px solid var(--fundo_E6);
+  padding-block: 2vh;
+  margin-inline: 25vh;
+}
+
+/* DOC */
+body.doc{
+  background-color: var(--fundo_E1);
+  color: var(--texto);
 }
