@@ -31,13 +31,30 @@ html, body{
 }
 
 body.login{
-  background-color: wheat;
+  background-image: url("../img/wallpaperGradiente.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 5% 12%;
+  box-sizing: border-box;
 }
 
 main.login{
-  margin: 5%;
-  background-color: white;
-  section{flex: 1;}
+  overflow: hidden;
+  color: var(--texto);
+  height: 100%;
+  display: flex;
+/*--- child elements styles ---*/
+  section.welcome{
+    background-color: #710048;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;};
+  section.login{
+    background-color: #1b1b1b;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;};
+  section{flex: 1; 
+    height: 100%;};
 }
 
 /* MAIN */
@@ -50,6 +67,7 @@ footer.main{
   font-family: 'Inter', Arial, sans-serif;
   text-align: center;
   font-size: 2vh;
+/*--- child elements styles ---*/
   p{
     line-height: 3vh;
   }
