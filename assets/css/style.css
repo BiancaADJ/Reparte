@@ -45,6 +45,8 @@ main.login{
   height: 100%;
   display: flex;
 /*--- child elements styles ---*/
+  section{flex: 1; 
+    height: 100%;};
   section.welcome{
     background-color: #710048;
     border-top-left-radius: 15px;
@@ -53,8 +55,6 @@ main.login{
     background-color: #1b1b1b;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;};
-  section{flex: 1; 
-    height: 100%;};
 }
 
 /* MAIN */
@@ -68,9 +68,7 @@ footer.main{
   text-align: center;
   font-size: 2vh;
 /*--- child elements styles ---*/
-  p{
-    line-height: 3vh;
-  }
+  p{line-height: 3vh;};
 }
 
 footer.main section:last-child{
