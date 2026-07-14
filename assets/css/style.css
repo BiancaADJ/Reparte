@@ -1,19 +1,35 @@
 /* ROOT */
 :root{
-  --cor_padrao: #F17D19;
-  --fundo_E1: #131314;
-  --fundo_E2: #1b1b1b;
-  --fundo_E3: #282a2c;
-  --fundo_E4: #323537;
-  --fundo_E5: #3f4244;
-  --fundo_E6: #4f5254;
+  --background: #e8c8a5;
+  --padrao: #F17D19;
   --texto: #e3e3e3;
+  --c1: #131314;
+  --c2: #1b1b1b;
+  --c3: #282a2c;
+  --c4: #323537;
+  --c5: #3f4244;
+  --c6: #4f5254;
 }
+
+/* Padrão */
+html, body{
+  background-color: var(--background);
+}
+
 /* Variáveis */
 .flex-center{
   display: flex;
   justify-content: center;
+}
+
+.center{
   align-items: center;
+  text-align: center;
+}
+
+.flex-between{
+  display: flex;
+  justify-content: space-between;
 }
 
 .center{
@@ -21,64 +37,23 @@
   align-items: center;
 }
 
-/* LOGIN */
-html, body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: var(--fonte1); /* Fonte usada */
+/* INDEX */
+header{  
+  img{
+    max-width: 5vh;
+  }
 }
 
-body.login{
-  background-image: url("../img/wallpaperGradiente.jpg");
-  background-size: cover;
-  background-repeat: repeat;
-  height: 100vh;
-  padding: 5% 12%;
-  box-sizing: border-box;
+section.index.section{
+  output{
+    
+  }
 }
 
-main.login{
-  overflow: hidden;
-  color: var(--texto);
-  height: 100%;
-  display: flex;
-/*--- child elements styles ---*/
-  section{flex: 1; 
-    height: 100%;};
-  section.welcome{
-    background-color: #710048;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;};
-  section.login{
-    background-color: #1b1b1b;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;};
-}
-
-/* MAIN */
-body.main{
-  background-color: var(--fundo_E2);
-  color: var(--texto);
-}
-
-footer.main{
-  font-family: 'Inter', Arial, sans-serif;
-  text-align: center;
-  font-size: 2vh;
-/*--- child elements styles ---*/
-  p{line-height: 3vh;};
-}
-
-footer.main section:last-child{
-  border-top: 1px solid var(--fundo_E6);
-  padding-block: 2vh;
-  margin-inline: 25vh;
-}
-
-/* DOC */
-body.doc{
-  background-color: var(--fundo_E1);
-  color: var(--texto);
+@media (prefers-color-scheme: dark){
+  :root{
+    --background: #a5dee8;
+    --padrao: #196cf1;
+    --texto: #b5b5b5;
+  }
 }
