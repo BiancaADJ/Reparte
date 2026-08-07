@@ -24,7 +24,7 @@ function App(){
         </div>
       </header>
 
-      <section>
+      <section className='column-center'>
         <output><h2>Reparte</h2></output>
         <output><h1>0.000.000,00</h1></output>
         <p>Se sobra, acumula. Se falta, reparte.</p>
