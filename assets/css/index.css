@@ -1,6 +1,8 @@
 /* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); /* Montserrat */
 
+a{text-decoration: none;}
+
 :root{
   --HTML: white; /* HTML */
   --background: #F8FAFF; /* Fundo */
@@ -26,6 +28,7 @@
 .column-center{display: flex; align-items: center; flex-direction: column; justify-content: center;}
 .line-center{display: flex; align-items: center; flex-direction: row; justify-content: center; text-align: center;}
 .relative{display: flex; position: relative;}
+.sticky{position: sticky; top: 0; z-index: 100;}
 
 @media (prefers-color-scheme: dark){
   :root{

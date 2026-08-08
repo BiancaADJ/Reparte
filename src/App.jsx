@@ -3,15 +3,15 @@ import logo from '../assets/img/letra-r.png'
 import user from '../assets/img/usuario.png'
 import moeda from '../assets/img/moeda.png'
 import lupa from '../assets/img/lupa.png'
+import sifrao from '../assets/img/sifrao.png'
 import '../assets/css/App.css'
 
 function App(){
   /* Variáveis e constantes */
 
   return ( /* Página */
-    <><html>
-      <body className='border'>
-      <header className='header App-header flex-line'>
+    <>
+      <header className='header App-header flex-line sticky'>
         <div className='line-center'><img src={logo} alt='Logo'/></div>
         <div className='line-center'>
           <div className='relative border'>
@@ -19,8 +19,11 @@ function App(){
             <input className='relative' type='text'/></div>
           </div>
         <div className='line-center'>
-          <i className='line-center'><img src={moeda} alt='moeda'/><output>0.000.000,00</output></i>
-          <img src={user} alt='user'/>
+          <a href='# '><i className='line-center'>
+            <img src={sifrao} alt='sifrao'/>
+            <output>0.000.000,00</output>
+          </i></a>
+          <a href="#Página de Usuário"><img src={user} alt='user'/></a>
         </div>
       </header>
 
@@ -66,7 +69,7 @@ function App(){
       <footer>
         <p>footer</p>
       </footer>
-      </body></html></>
+    </>
   )
 }
 
