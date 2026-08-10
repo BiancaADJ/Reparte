@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from "react";
 import logo from '../assets/img/letra-r.png'
 import user from '../assets/img/usuario.png'
 import moeda from '../assets/img/moeda.png'
@@ -8,6 +8,13 @@ import '../assets/css/App.css'
 
 function App(){
   /* Variáveis e constantes */
+    const [mensagens, setMensagens] = useState([]);
+
+    useEffect(() => {
+      fetch("http://localhost/reparte-api/")
+        .then(res => res.json())
+        .then(data => setMensagens(data));
+    }, []);
 
   return ( /* Página */
     <>
@@ -67,7 +74,11 @@ function App(){
       <section></section>
 
       <footer>
-        <p>footer</p>
+        <p>Teste de banco de dados</p>
+        {mensagens.map(
+          (mensagem, index) => (
+            <p key={index}>{mensagem.texto}</p>
+        ))}
       </footer>
     </>
   )
