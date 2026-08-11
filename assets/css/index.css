@@ -29,6 +29,7 @@ a{text-decoration: none;}
 .line-center{display: flex; align-items: center; flex-direction: row; justify-content: center; text-align: center;}
 .relative{display: flex; position: relative;}
 .sticky{position: sticky; top: 0; z-index: 100;}
+.flex-around{display: flex; flex-direction: row; justify-content: space-around;}
 
 @media (prefers-color-scheme: dark){
   :root{

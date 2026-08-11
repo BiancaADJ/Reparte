@@ -5,11 +5,12 @@ header("Content-Type: application/json");
 
 /* Conexão */
 $conn = mysqli_connect(
-  "localhost", /* localização */
-  "root", /* Usuário */
-  "557087148663", /* Senha */
-  "reparte_teste"/* Banco de dados */
-); 
+  "localhost",
+  "root",
+  "557087148663",
+  "reparte_teste",
+  3306
+);
 
 if ($conn->connect_error){ /* Verificação de conexão com mensagem de erro */
     die(json_encode(["erro" => "Falha na conexão"]));

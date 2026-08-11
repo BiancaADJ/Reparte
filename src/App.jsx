@@ -4,17 +4,14 @@ import user from '../assets/img/usuario.png'
 import moeda from '../assets/img/moeda.png'
 import lupa from '../assets/img/lupa.png'
 import sifrao from '../assets/img/sifrao.png'
+import reparte_log from "../assets/img/campanha-digital.png"
+import caridade from "../assets/img/caridade.png"
+import missao from "../assets/img/missao.png"
+import ads from "../assets/img/anuncios-online.png"
 import '../assets/css/App.css'
 
 function App(){
   /* Variáveis e constantes */
-    const [mensagens, setMensagens] = useState([]);
-
-    useEffect(() => {
-      fetch("http://localhost/reparte-api/")
-        .then(res => res.json())
-        .then(data => setMensagens(data));
-    }, []);
 
   return ( /* Página */
     <>
@@ -41,24 +38,24 @@ function App(){
       </section>
 
       <section>
-        <div className='flex-line'>
+        <div className='flex-around'>
           <div className='column-center'>
-            <h3>1</h3>
-            <img src={moeda} alt='moeda'/>
+            <h3>Caridade</h3>
+            <img src={caridade} alt='moeda'/>
           </div>
           <div className='column-center'>
-            <h3>2</h3>
-            <img src={moeda} alt='moeda'/>
+            <h3>Reparte Log</h3>
+            <img src={reparte_log} alt='moeda'/>
           </div>
           <div className='column-center'>
-            <h3>3</h3>
-            <img src={moeda} alt='moeda'/>
+            <h3>Missões</h3>
+            <img src={missao} alt='moeda'/>
           </div>
         </div>
-        <div className='flex-line'>
+        <div className='flex-around'>
           <div className='column-center'>
-            <h3>1</h3>
-            <img src={moeda} alt='moeda'/>
+            <h3>Acúmulo</h3>
+            <img src={ads} alt='moeda'/>
           </div>
           <div className='column-center'>
             <h3>2</h3>
@@ -74,11 +71,7 @@ function App(){
       <section></section>
 
       <footer>
-        <p>Teste de banco de dados</p>
-        {mensagens.map(
-          (mensagem, index) => (
-            <p key={index}>{mensagem.texto}</p>
-        ))}
+
       </footer>
     </>
   )
