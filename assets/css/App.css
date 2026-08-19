@@ -35,11 +35,16 @@ header{display: flex;
     display: flex;
     background-color: var(--surface);
     border: 1px solid var(--border);
-    /* padding: 0.5vh; */
-    &>img{
-      width: 2vh;
-      height: 2vh;
-      padding: 0.5vh;
+    &>picture{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &>picture>img{
+      width: 3vh;
+      height: 3vh;
+      display: block;
+      padding: 0.2vh;
     }
     &>input{
       flex: 1;
@@ -56,10 +61,7 @@ header{display: flex;
 header>div:nth-child(3){
   &>a>i{
     color: var(--text-light);
-    &>a>img{
-      max-width: 4vh;
-      max-height: 4vh;
-    }
+    &>a>img{max-width: 4vh; max-height: 4vh;}
     &>output{
       padding-right: 1.5vh;
     }
@@ -71,11 +73,23 @@ section:nth-child(2){
 }
 section:nth-child(3){
   background-color: var(--surface-alt);
-  img{
-    max-width: 10vh;
-    max-height: 10vh;
+  img{max-width: 10vh; max-height: 10vh;}
+  div{margin: 2vh;
+    &>div{
+      background-color: var(--surface);
+      width: 25%;
+      padding: 1vh;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      &>h3{
+        color: var(--text-light);
+        margin-block: 1.5vh;
+      }
+      &>img{
+        margin-block: 1.5vh;
+      }
+    }
   }
-  div{margin: 2vh;}
 }
 
 footer{}

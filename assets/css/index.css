@@ -23,6 +23,7 @@ a{text-decoration: none;}
   --mono: ui-monospace, Consolas, monospace;
 }
 
+.picture{padding: 0; margin: 0; height: 0;}
 .border{border-radius: 10px;}
 .flex-line{display: flex; flex-direction: row; justify-content: space-between;}
 .column-center{display: flex; align-items: center; flex-direction: column; justify-content: center;}
